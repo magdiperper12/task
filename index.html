@@ -16,9 +16,8 @@
 			rel="stylesheet"
 			href="/style.css" />
 	</head>
-	<body>
-		<!-- Ticker -->
-		<div class="ticker p-3">
+	<body class="">
+		<div class="smallNav p-3">
 			<span
 				>🎉 أقوى عروض اليوم الوطني هنا 🎉 أقوى عروض اليوم الوطني هنا 🎉 أقوى
 				عروض اليوم الوطني هنا 🎉 أقوى عروض اليوم الوطني هنا 🎉 أقوى عروض اليوم
@@ -26,29 +25,30 @@
 			>
 		</div>
 
-		<!-- Hero -->
 		<section class="hero">
-			<div class="booking-form">
-				<h5 class="text-center mb-3 ehgez">احجز خدمتك</h5>
+			<div
+				class="booking-form"
+				style="background-color: #fff4e9e5">
+				<h3 class="text-center mb-3">احجز خدمتك</h3>
 				<form>
 					<div class="mb-2">
 						<label>الاسم</label>
 						<input
 							type="text"
-							class="form-control"
+							class="form-control formStyle"
 							placeholder="الاسم" />
 					</div>
 					<div class="mb-2">
 						<label>رقم الهاتف</label>
 						<input
 							type="text"
-							class="form-control"
+							class="form-control formStyle"
 							placeholder="رقم الهاتف" />
 					</div>
 					<div class="mb-2">
 						<label> الفرع</label>
 						<select
-							class="form-select"
+							class="form-select formStyle"
 							aria-label="Default select example">
 							<option selected>-اختر الفرع-</option>
 							<option value="1">One</option>
@@ -58,7 +58,7 @@
 					</div>
 					<div class="mb-2">
 						<label> العرض</label>
-						<select class="form-select">
+						<select class="form-select formStyle">
 							<option>-اختر العرض-</option>
 							<option>خدمة 1</option>
 							<option>خدمة 2</option>
@@ -82,6 +82,7 @@
 								justify-content: start;
 								gap: 8px;
 								margin: auto;
+								box-shadow: #0000006f 2px 8px 20px;
 							">
 							<img
 								src="/image/mas.png"
@@ -98,28 +99,48 @@
 		<!-- Services -->
 
 		<section class="cont text-center my-5">
-			<h3 class="mb-4 ehgez">خدمات أكثر قد تهمك</h3>
+			<h3 class="mb-4">خدمات أكثر قد تهمك</h3>
 
 			<div
 				id="servicesCarousel"
 				class="carousel slide height-100"
+				style="display: flex; justify-content: center; align-items: center"
 				data-bs-ride="carousel">
-				<div class="carousel-inner">
+				<div
+					class="carousel-inner"
+					style="width: 80%">
 					<!-- Slide 1 -->
 					<div class="carousel-item active">
-						<div class="row justify-content-center p-3">
+						<div
+							class="row justify-content-center p-3"
+							style="display: flex; flex-wrap: nowrap">
 							<div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
 								<div class="service-card">
 									<img
 										src="/image/image2.jpg"
 										alt=""
-										class="images" />
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
+
 									<h5>جلسات ليزر لتفتيح كامل</h5>
 
 									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
 									</ul>
 									<p class="price">
 										<img
@@ -132,13 +153,28 @@
 								<div class="service-card">
 									<img
 										src="/image/image2.jpg"
-										alt="" />
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
 									<h5>جلسات إزالة شعر بالليزر</h5>
 
 									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
 									</ul>
 									<p class="price">
 										<img
@@ -151,13 +187,28 @@
 								<div class="service-card">
 									<img
 										src="/image/image2.jpg"
-										alt="" />
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
 									<h5>جلسات تنظيف بشرة</h5>
 
 									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
 									</ul>
 									<p class="price">
 										<img
@@ -170,13 +221,28 @@
 								<div class="service-card">
 									<img
 										src="/image/image2.jpg"
-										alt="" />
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
 									<h5>جلسات تقشير كيميائي</h5>
 
 									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
 									</ul>
 									<p class="price">
 										<img
@@ -190,56 +256,40 @@
 
 					<!-- Slide 2 -->
 					<div class="carousel-item">
-						<div class="row justify-content-center p-3">
+						<div
+							class="row justify-content-center p-3"
+							style="display: flex; flex-wrap: nowrap">
 							<div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
 								<div class="service-card">
 									<img
 										src="/image/image2.jpg"
-										alt="" />
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
 									<h5>جلسات شد الوجه</h5>
 
 									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
-									</ul>
-									<p class="price">
-										<img
-											src="/image/mas.png"
-											class="mas" /><strong>2500 ريال</strong>
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
-								<div class="service-card">
-									<img
-										src="/image/image2.jpg"
-										alt="" />
-									<h5>جلسات مساج علاجي</h5>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />
 
-									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
-									</ul>
-									<p class="price">
-										<img
-											src="/image/mas.png"
-											class="mas" /><strong>1500 ريال</strong>
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
-								<div class="service-card">
-									<img
-										src="/image/image2.jpg"
-										alt="" />
-									<h5>جلسات نضارة البشرة</h5>
+											فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />
+											بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />
 
-									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
+											حقنة فيلر للجبهة
+										</li>
 									</ul>
 									<p class="price">
 										<img
@@ -252,13 +302,96 @@
 								<div class="service-card">
 									<img
 										src="/image/image2.jpg"
-										alt="" />
-									<h5>جلسات إزالة آثار حب الشباب</h5>
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
+									<h5>جلسات مساج علاجي</h5>
 
 									<ul>
-										<li>فراكشنال ليزر</li>
-										<li>بوتوكس للوجه بالكامل</li>
-										<li>حقنة فيلر للجبهة</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
+									</ul>
+									<p class="price">
+										<img
+											src="/image/mas.png"
+											class="mas" /><strong>1500 ريال</strong>
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+								<div class="service-card">
+									<img
+										src="/image/image2.jpg"
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
+									<h5>جلسات نضارة البشرة</h5>
+
+									<ul>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
+									</ul>
+									<p class="price">
+										<img
+											src="/image/mas.png"
+											class="mas" /><strong>1200 ريال</strong>
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+								<div class="service-card">
+									<img
+										src="/image/image2.jpg"
+										alt=""
+										class="bigImage" />
+
+									<div class="threeone">3x1</div>
+									<h5>جلسات شد الوجه</h5>
+
+									<ul>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />فراكشنال ليزر
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />بوتوكس للوجه بالكامل
+										</li>
+										<li>
+											<img
+												src="/image/mas.png"
+												class="liimage" />حقنة فيلر للجبهة
+										</li>
 									</ul>
 									<p class="price">
 										<img
@@ -382,21 +515,23 @@
 
 		<!-- Download -->
 		<section class="download">
-			<h3>حمل التطبيق الآن</h3>
-			<a
-				href="#"
-				class="GooglePlay"
-				><img
-					src="/image/googleplay.png"
-					alt="GooglePlay"
-			/></a>
-			<a
-				href="#"
-				class="Appstore"
-				><img
-					src="/image/getonappstore.png"
-					alt="Appstore"
-			/></a>
+			<h3 style="margin-bottom: -40px">حمل التطبيق الآن</h3>
+			<div style="margin-top: -40px">
+				<a
+					href="#"
+					class="GooglePlay"
+					><img
+						src="/image/googleplay.png"
+						alt="GooglePlay"
+				/></a>
+				<a
+					href="#"
+					class="Appstore"
+					><img
+						src="/image/getonappstore.png"
+						alt="Appstore"
+				/></a>
+			</div>
 		</section>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
