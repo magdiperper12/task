@@ -27,15 +27,6 @@ body {
 	padding-right: 5%;
 	animation: ticker 25s linear infinite;
 }
-/* 
-@keyframes smallNav {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-} */
 .hero {
 	position: relative;
 	background: url('/image/image.png') no-repeat center/contain;
@@ -85,24 +76,7 @@ body {
 	transform: translateY(-50%);
 	object-fit: cover;
 }
-/* .gradiant {
-	background: linear-gradient(
-		to top,
-		#1a777703 0%,
-		#0b5c5cd7 50%,
-		#19767600 100%
-	);
-	height: 280px;
-	margin-top: -200px; 
-}
-*/
 .cont {
-	/* background: linear-gradient(
-		to top,
-		#19767600 0%,
-		#05972c81 50%,
-		#05a10a17 100%
-	); */
 	padding: 120px;
 	margin-top: 120px;
 }
@@ -329,43 +303,39 @@ h3::after {
 	z-index: 1;
 }
 
-/* الأزرار العامة */
 .carousel-control-prev,
 .carousel-control-next {
-	width: 60px; /* عرض الزر */
-	height: 60px; /* ارتفاع الزر */
+	width: 60px;
+	height: 60px;
 	top: 50%;
 	transform: translateY(-50%);
-	background: transparent; /* إزالة الخلفية الافتراضية */
+	background: transparent;
 	border: none;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
 	display: inline-block;
-	width: 50px; /* حجم الأيقونة */
+	width: 50px;
 	height: 50px;
-	background-color: black; /* اللون */
-	border-radius: 50%; /* شكل دائري */
+	background-color: black;
+	border-radius: 50%;
 	padding: 5px;
 	background-size: 50% 50%;
 	font-size: 30px;
 	font-weight: 900;
 }
 
-/* إذا أردت زيادة حجم الأيقونة */
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
-	content: ''; /* إزالة السهم الافتراضي */
+	content: '';
 }
 
 @media (max-width: 768px) {
-	/* بطل ما يكون في سكروول افقي */
 	body {
 		overflow-x: hidden;
 	}
 
-	/* الشريط العلوي */
 	.smallNav {
 		font-size: 12px;
 		padding: 4px;
@@ -376,7 +346,6 @@ h3::after {
 		right: 0%;
 	}
 
-	/* البانر */
 	.hero {
 		background: url('/image/image.png') no-repeat center top/cover;
 		height: 100vh;
@@ -388,7 +357,6 @@ h3::after {
 		text-align: center;
 	}
 
-	/* فورم الحجز */
 	.booking-form {
 		position: relative;
 		top: 0;
@@ -419,7 +387,6 @@ h3::after {
 		border-radius: 25px;
 	}
 
-	/* قسم الخدمات */
 	.cont {
 		padding: 40px 10px;
 		margin-top: 40px;
@@ -460,7 +427,6 @@ h3::after {
 		margin-top: -40px;
 	}
 
-	/* الشهادات */
 	.testimonials {
 		padding: 20px 10px;
 	}
@@ -488,7 +454,6 @@ h3::after {
 		margin-top: 5px;
 	}
 
-	/* زر التحميل */
 	.download img {
 		width: 130px;
 		margin: 5px;
